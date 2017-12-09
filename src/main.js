@@ -10,15 +10,15 @@ import 'Config/ajax'
 import 'Directives' // 指令
 
 // Webpack CSS import
-import 'onsenui/css/onsenui.css'
-import 'onsenui/css/onsen-css-components.css'
+// import 'onsenui/css/onsenui.css'
+// import 'onsenui/css/onsen-css-components.css'
 
 //插件
-import VueOnsen from 'vue-onsenui'
+// import VueOnsen from 'vue-onsenui'
 import injector from 'Config/inject'
 
 Vue.use(injector)
-Vue.use(VueOnsen)
+// Vue.use(VueOnsen)
 
 Vue.config.productionTip = false
 

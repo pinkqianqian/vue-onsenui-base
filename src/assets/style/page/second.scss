@@ -1,0 +1,59 @@
+.wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(./../../bg.jpg) no-repeat fixed center;
+    background-size: contain;
+    // background-size: cover;
+    display: block;
+}
+
+.formBox{
+    height: 250px;
+    width: auto;
+    margin: 180px 20px 10px 20px;
+}
+
+.formBox .itemBox{
+    width: 100%;
+    height: 60px;
+    margin: 0 0 15px 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.formBox .itemBox .item-text {
+    line-height: center;
+    font-size: 24px;
+    display: inline-block;
+    flex-grow: 1;
+    flex-basis: 50px;
+}
+
+.formBox .itemBox .item-input {
+    background: #fff;
+    flex-grow: 3;
+    border: none;
+    border-radius: 10px;
+    height: 70%;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.item-button{
+    background: #c00000;
+    width: 130px;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+    font-size: 26px;
+    color: #fff;
+    line-height: center;
+    text-align: center;
+    margin-left: 28%;
+}

@@ -3,7 +3,6 @@
         <transition name="fade" mode="out-in">
             <router-view></router-view>
         </transition>
-        <Ads></Ads>
     </div>
 </template>
 
@@ -11,12 +10,8 @@
 import { mapActions } from 'vuex'
 import { LOGIN_CODE } from 'Config';
 
-import Ads from 'Views/common/ads'
 
 export default {
-    components: {
-        Ads
-    },
     methods: {
         ...mapActions(['getUserInfo']),
         bindEvent() {
@@ -27,7 +22,7 @@ export default {
                     this.$store.commit('SET_TO_LOGIN', true)
                     return
                 }
-                
+
             })
             GLOBAL.vbus.$on('request_error', (resData) => {
             })
@@ -38,7 +33,7 @@ export default {
         },
         init() {
             this.getUserInfo()
-            
+
         }
     },
     created() {

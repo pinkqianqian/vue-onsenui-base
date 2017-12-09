@@ -1,8 +1,8 @@
 import SourceMaker from 'Utils/sourcemaker'
 // 报告查询
-import other from './other'
+import codeCheck from './codeCheck'
 import user from './user'
 export default new SourceMaker({
-    other,
+    codeCheck,
     user
 }, 'API')

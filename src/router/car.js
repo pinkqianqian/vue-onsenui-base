@@ -1,10 +1,16 @@
+import First from 'Views/first'
+import Second from 'Views/second'
+import Third from 'Views/third'
 export default [{
-    name: "index",
-    path: "/",
-    component: resolve => require(['Views/index'], resolve),
-    // children: [{
-    //     name: "dashboard",
-    //     path: "dashboard",
-    //     component: resolve => require(['Pages/dashboard/index'], resolve)
-    // }]
+    name: "first",
+    path: "/first",
+    component: First,
+}, {
+    name: "second",
+    path: "/second",
+    component: Second,
+}, {
+    name: "third",
+    path: "/third",
+    component: Third,
 }]
